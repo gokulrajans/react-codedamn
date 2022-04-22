@@ -4,11 +4,15 @@ import React, {useState} from "react";
 function Header() {
     const [count, setValue] = useState(25);
 
+
     function increaseValue() {
-        setValue(35);
+        // function using in the state.
+        setValue(function(){
+            return 2000;
+        });
     }
     function decreseValue() {
-        setValue(-90);
+        setValue(count - 1);
     }
     return <><h1>useState hooks...</h1>
     <h3>Counter: {count}</h3>
