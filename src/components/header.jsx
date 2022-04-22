@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 const apples =["as0","as1","as2","as3","as4","as5","as6","as7"];
 
@@ -7,6 +7,10 @@ function Header() {
     
     const [apple, currentValue] = useState(apples[0]);
 
+
+    useEffect(() => {
+        console.log("useEffect has been triggered..."+ count);
+    },[count]);
 
     function increaseValue() {
         // function using in the state.
