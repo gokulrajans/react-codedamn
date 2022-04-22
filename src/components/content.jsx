@@ -4,6 +4,7 @@ let age = 0;
 
 function increaseValue() {
     age++;
+    
     console.log(age);
 }
 function content() {
