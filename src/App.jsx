@@ -4,7 +4,7 @@ import Content from "./components/content"
 import Footer from "./components/footer";
 
 function App() {
-    return(<><Header></Header></>)
+    return(<><Content></Content></>)
 }
 
 export default App
